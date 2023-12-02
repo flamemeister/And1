@@ -63,6 +63,7 @@
 		EBE65FA72B1A6F90003D865D /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		EBE65FA92B1A73B4003D865D /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		EBE65FAC2B1AB2F3003D865D /* CountryPickerUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryPickerUI.swift; sourceTree = "<group>"; };
+		EBF73D2B2B1BB3A900849F9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +115,7 @@
 		EBE65F6A2B1A4FB2003D865D /* AndOne */ = {
 			isa = PBXGroup;
 			children = (
+				EBF73D2B2B1BB3A900849F9F /* Info.plist */,
 				EBE65F9E2B1A5692003D865D /* Font */,
 				EBE65F982B1A5082003D865D /* View */,
 				EBE65F972B1A5077003D865D /* UICommon */,
@@ -512,6 +514,7 @@
 				DEVELOPMENT_TEAM = RMW39T9JB4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AndOne/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -541,6 +544,7 @@
 				DEVELOPMENT_TEAM = RMW39T9JB4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AndOne/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

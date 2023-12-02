@@ -27,7 +27,7 @@ struct SignInView: View {
             ScrollView{
                 VStack(alignment: .leading){
                     Text("Good shoes take you\nGood places")
-                        .font(.customfont(.semibold, fontSize: 26))
+                        .font(Font.custom("Gilroy-Semibold", size: 26))
                         .foregroundColor(.primaryText)
                         //.multilineTextAlignment(.center)
                         .padding(.bottom, 25)
@@ -36,11 +36,18 @@ struct SignInView: View {
                         Button{
                             isShowPicker = true
                         } label: {
-                             Image("")
+                             //Image("")
+                            if let countryObj = countryObj{
+                                
+                                Text(" \(countryObj.isoCode.getFlag())")
+                                    .font(.customfont(.medium, fontSize: 25 ))
+                                    .foregroundColor(.primaryText)
+                                
+                                Text(" +\(countryObj.phoneCode)")
+                                    .font(.customfont(.medium, fontSize: 18))
+                                    .foregroundColor(.primaryText)
+                            }
                             
-                            Text( "+49")
-                                .font(.customfont(.medium, fontSize: 18))
-                                .foregroundColor(.primaryText)
                         }
                         TextField("Enter Mobile", text: $txtMobile)
                             .frame(minWidth: 0, maxWidth: .infinity)
@@ -51,12 +58,10 @@ struct SignInView: View {
                     
                     Text("Or connect with social media")
                         .font(.customfont(.semibold, fontSize: 14))
-                        .foregroundColor(.primaryText)
+                        .foregroundColor(.primaryText.opacity(0.6))
                         .multilineTextAlignment(.center)
                         .frame(minWidth: 0, maxWidth: .infinity, alignment: .center)
                         .padding(.bottom, 25)
-                    
-                    
                     
                     Button{
                         
@@ -75,9 +80,6 @@ struct SignInView: View {
                     .cornerRadius(20)
                     .padding(.bottom, 8)
 
-                    
-                    
-                    
                     Button{
                         
                     } label: {
@@ -99,6 +101,9 @@ struct SignInView: View {
                 .frame(width: .screenWidth, alignment: .leading)
                 .padding(.top, .topInsets + .screenWidth * 0.7 )
             }
+        }
+        .onAppear{
+            self.countryObj = Country(phoneCode: "77", isoCode: "IN")
         }
         .sheet(isPresented: $isShowPicker, content: { CountryPickerUI(country: $countryObj)})
             .navigationTitle("")
