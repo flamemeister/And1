@@ -17,13 +17,15 @@
 		EBE65F892B1A4FB3003D865D /* AndOneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE65F882B1A4FB3003D865D /* AndOneUITestsLaunchTests.swift */; };
 		EBE65F9B2B1A5126003D865D /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE65F9A2B1A5126003D865D /* WelcomeView.swift */; };
 		EBE65F9D2B1A5444003D865D /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE65F9C2B1A5444003D865D /* UIExtension.swift */; };
-		EBE65FA32B1A56A9003D865D /* Gilroy-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EBE65F9F2B1A56A9003D865D /* Gilroy-Bold.ttf */; };
-		EBE65FA42B1A56A9003D865D /* Gilroy-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EBE65FA02B1A56A9003D865D /* Gilroy-Medium.ttf */; };
-		EBE65FA52B1A56A9003D865D /* Gilroy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EBE65FA12B1A56A9003D865D /* Gilroy-Regular.ttf */; };
-		EBE65FA62B1A56A9003D865D /* Gilroy-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EBE65FA22B1A56A9003D865D /* Gilroy-SemiBold.ttf */; };
 		EBE65FA82B1A6F90003D865D /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE65FA72B1A6F90003D865D /* RoundButton.swift */; };
 		EBE65FAA2B1A73B4003D865D /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE65FA92B1A73B4003D865D /* SignInView.swift */; };
 		EBE65FAD2B1AB2F3003D865D /* CountryPickerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE65FAC2B1AB2F3003D865D /* CountryPickerUI.swift */; };
+		EBF73D2D2B1BB91C00849F9F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF73D2C2B1BB91C00849F9F /* LoginView.swift */; };
+		EBF73D332B1BC22200849F9F /* Gilroy-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EBF73D2F2B1BC22200849F9F /* Gilroy-SemiBold.otf */; };
+		EBF73D342B1BC22200849F9F /* Gilroy-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EBF73D302B1BC22200849F9F /* Gilroy-Bold.otf */; };
+		EBF73D352B1BC22200849F9F /* Gilroy-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = EBF73D312B1BC22200849F9F /* Gilroy-Regular.otf */; };
+		EBF73D362B1BC22200849F9F /* Gilroy-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = EBF73D322B1BC22200849F9F /* Gilroy-Medium.otf */; };
+		EBF73D382B1CAE1600849F9F /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF73D372B1CAE1600849F9F /* MainViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,14 +58,16 @@
 		EBE65F882B1A4FB3003D865D /* AndOneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AndOneUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		EBE65F9A2B1A5126003D865D /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		EBE65F9C2B1A5444003D865D /* UIExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
-		EBE65F9F2B1A56A9003D865D /* Gilroy-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Bold.ttf"; sourceTree = "<group>"; };
-		EBE65FA02B1A56A9003D865D /* Gilroy-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Medium.ttf"; sourceTree = "<group>"; };
-		EBE65FA12B1A56A9003D865D /* Gilroy-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Regular.ttf"; sourceTree = "<group>"; };
-		EBE65FA22B1A56A9003D865D /* Gilroy-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-SemiBold.ttf"; sourceTree = "<group>"; };
 		EBE65FA72B1A6F90003D865D /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		EBE65FA92B1A73B4003D865D /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		EBE65FAC2B1AB2F3003D865D /* CountryPickerUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryPickerUI.swift; sourceTree = "<group>"; };
 		EBF73D2B2B1BB3A900849F9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		EBF73D2C2B1BB91C00849F9F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		EBF73D2F2B1BC22200849F9F /* Gilroy-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-SemiBold.otf"; sourceTree = "<group>"; };
+		EBF73D302B1BC22200849F9F /* Gilroy-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Bold.otf"; sourceTree = "<group>"; };
+		EBF73D312B1BC22200849F9F /* Gilroy-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Regular.otf"; sourceTree = "<group>"; };
+		EBF73D322B1BC22200849F9F /* Gilroy-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Medium.otf"; sourceTree = "<group>"; };
+		EBF73D372B1CAE1600849F9F /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +119,8 @@
 		EBE65F6A2B1A4FB2003D865D /* AndOne */ = {
 			isa = PBXGroup;
 			children = (
+				EBF73D2E2B1BC20400849F9F /* Font */,
 				EBF73D2B2B1BB3A900849F9F /* Info.plist */,
-				EBE65F9E2B1A5692003D865D /* Font */,
 				EBE65F982B1A5082003D865D /* View */,
 				EBE65F972B1A5077003D865D /* UICommon */,
 				EBE65F962B1A506C003D865D /* Model */,
@@ -157,6 +161,7 @@
 		EBE65F952B1A5060003D865D /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				EBF73D372B1CAE1600849F9F /* MainViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -191,17 +196,18 @@
 			children = (
 				EBE65F9A2B1A5126003D865D /* WelcomeView.swift */,
 				EBE65FA92B1A73B4003D865D /* SignInView.swift */,
+				EBF73D2C2B1BB91C00849F9F /* LoginView.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
 		};
-		EBE65F9E2B1A5692003D865D /* Font */ = {
+		EBF73D2E2B1BC20400849F9F /* Font */ = {
 			isa = PBXGroup;
 			children = (
-				EBE65F9F2B1A56A9003D865D /* Gilroy-Bold.ttf */,
-				EBE65FA02B1A56A9003D865D /* Gilroy-Medium.ttf */,
-				EBE65FA12B1A56A9003D865D /* Gilroy-Regular.ttf */,
-				EBE65FA22B1A56A9003D865D /* Gilroy-SemiBold.ttf */,
+				EBF73D302B1BC22200849F9F /* Gilroy-Bold.otf */,
+				EBF73D322B1BC22200849F9F /* Gilroy-Medium.otf */,
+				EBF73D312B1BC22200849F9F /* Gilroy-Regular.otf */,
+				EBF73D2F2B1BC22200849F9F /* Gilroy-SemiBold.otf */,
 			);
 			path = Font;
 			sourceTree = "<group>";
@@ -316,11 +322,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBE65FA52B1A56A9003D865D /* Gilroy-Regular.ttf in Resources */,
-				EBE65FA62B1A56A9003D865D /* Gilroy-SemiBold.ttf in Resources */,
-				EBE65FA32B1A56A9003D865D /* Gilroy-Bold.ttf in Resources */,
-				EBE65FA42B1A56A9003D865D /* Gilroy-Medium.ttf in Resources */,
+				EBF73D352B1BC22200849F9F /* Gilroy-Regular.otf in Resources */,
 				EBE65F732B1A4FB3003D865D /* Preview Assets.xcassets in Resources */,
+				EBF73D332B1BC22200849F9F /* Gilroy-SemiBold.otf in Resources */,
+				EBF73D342B1BC22200849F9F /* Gilroy-Bold.otf in Resources */,
+				EBF73D362B1BC22200849F9F /* Gilroy-Medium.otf in Resources */,
 				EBE65F702B1A4FB3003D865D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,7 +358,9 @@
 				EBE65FA82B1A6F90003D865D /* RoundButton.swift in Sources */,
 				EBE65F9B2B1A5126003D865D /* WelcomeView.swift in Sources */,
 				EBE65F6C2B1A4FB2003D865D /* AndOneApp.swift in Sources */,
+				EBF73D2D2B1BB91C00849F9F /* LoginView.swift in Sources */,
 				EBE65F9D2B1A5444003D865D /* UIExtension.swift in Sources */,
+				EBF73D382B1CAE1600849F9F /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -76,7 +76,7 @@ struct SignInView: View {
                             .multilineTextAlignment(.center)
                     }
                     .frame(minWidth: 0, maxWidth: .infinity, minHeight: 60, maxHeight: 60)
-                    .background(Color(hex: "5383EC"))
+                    .background(Color.blue)
                     .cornerRadius(20)
                     .padding(.bottom, 8)
 
@@ -103,7 +103,7 @@ struct SignInView: View {
             }
         }
         .onAppear{
-            self.countryObj = Country(phoneCode: "77", isoCode: "IN")
+            self.countryObj = Country(phoneCode: "7", isoCode: "KZ")
         }
         .sheet(isPresented: $isShowPicker, content: { CountryPickerUI(country: $countryObj)})
             .navigationTitle("")
