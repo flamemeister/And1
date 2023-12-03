@@ -121,9 +121,9 @@ struct ShowButton: ViewModifier{
         HStack{
             content
             Button{
-                
+                isShow.toggle()
             } label: {
-                Image(systemName: isShow ? "eye.fill" : "eye.slash.fill")
+                Image(systemName: !isShow ? "eye.fill" : "eye.slash.fill")
                     .foregroundColor(.textTitle)
             }
         }
