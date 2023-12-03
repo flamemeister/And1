@@ -25,9 +25,10 @@ struct LoginView: View {
                     .scaledToFit()
                     .frame(width: 70)
                     .padding(.bottom, .screenWidth * 0.12)
-
+                
                 Text("Log In")
-                    .font(.customfont(.semibold, fontSize: 26))
+                
+                    .font(.customfont(.bold, fontSize: 26))
                     .foregroundColor(.primaryText)
                     .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
                     .padding(.bottom, 4)
@@ -42,6 +43,32 @@ struct LoginView: View {
                     .padding(.bottom, .screenWidth * 0.07)
                 
                 LineSecureField( title: "Password", placeholder: "Enter your password", txt: $loginVM.txtPassword, isShowPassword: $loginVM.isShowPassword)
+                    .padding(.bottom, .screenWidth * 0.02)
+                
+                Button{
+                    
+                } label: {
+                    Text("Forgot password?")
+                        .font(.customfont(.medium, fontSize: 14))
+                        .foregroundColor(.primaryText)
+                }
+                .frame(minWidth: 0, maxWidth: .infinity, alignment: .trailing)
+                .padding(.bottom, .screenWidth * 0.05)
+                
+                RoundButton(title: "Log In"){
+                    
+                }
+                .padding(.bottom, .screenWidth * 0.05)
+                HStack{
+                    Text("Don't have an account?")
+                        
+                        .font(.customfont(.medium, fontSize: 14))
+                        .foregroundColor(.primaryText)
+                    Text("Sign up")
+                        .font(.customfont(.medium, fontSize: 14))
+                        .foregroundColor(.blue)
+                }
+            
                 
                 Spacer()
                 
@@ -66,6 +93,9 @@ struct LoginView: View {
             }
             .padding(.top, .topInsets)
             .padding(.horizontal, 20)
+        }
+        .alert(isPresented: $loginVM.showError){
+            Alert(title: Text(Globs.AppName), message: Text(loginVM.errorMessage), dismissButton: .default(Text("Okay")))
         }
         .navigationTitle("")
         .navigationBarBackButtonHidden(true)
