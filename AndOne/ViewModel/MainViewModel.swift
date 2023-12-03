@@ -19,8 +19,9 @@ class MainViewModel: ObservableObject{
     
     //service call
     func serviceCallLogin(){
+
         
-        if(txtEmail.isEmpty){
+        if(txtEmail.isValidEmail){
             self.errorMessage = "please enter your valid email"
             self.showError = true
             return

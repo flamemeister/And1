@@ -69,7 +69,6 @@ struct LoginView: View {
                         .foregroundColor(.blue)
                 }
             
-                
                 Spacer()
                 
             }
