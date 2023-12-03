@@ -38,21 +38,10 @@ struct LoginView: View {
                     .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
                     .padding(.bottom, .screenWidth * 0.1)
                 
-                VStack{
-                    Text("Email")
-                        .font(.customfont(.semibold, fontSize: 16))
-                        .foregroundColor(.primaryText)
-                        .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
-                    TextField("Enter email", text: $loginVM.txtEmail)
-                    
-                    Divider()
-                    
-                    Text("Password")
-                        .font(.customfont(.semibold, fontSize: 16))
-                        .foregroundColor(.primaryText)
-                        .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
-                    TextField("Enter password", text: $loginVM.txtPassword)
-                }
+                LineTextField(txt: $loginVM.txtEmail, title: "Email", placeholder: "Enter your email", keyboardType: .emailAddress)
+                
+                LineTextField(txt: $loginVM.txtPassword, title: "Password", placeholder: "Enter your password")
+                    .modifier(ShowButton(isShow: $loginVM.isShowPassword))
                 
                 Spacer()
                 

@@ -11,6 +11,7 @@ struct LineTextField: View {
     @Binding var txt: String
     @State var title: String = "Title"
     @State var placeholder: String = "Placeholder"
+    @State var keyboardType: UIKeyboardType = .default
     var body: some View {
         VStack{
             Text(title)
@@ -19,6 +20,7 @@ struct LineTextField: View {
                 .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
             
             TextField(placeholder, text: $txt)
+                .keyboardType(keyboardType )
             Divider()
         }
     }

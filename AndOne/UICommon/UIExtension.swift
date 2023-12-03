@@ -114,3 +114,18 @@ extension Color {
         )
     }
 }
+struct ShowButton: ViewModifier{
+    @Binding var isShow: Bool
+    
+    public func body(content: Content) -> some View {
+        HStack{
+            content
+            Button{
+                
+            } label: {
+                Image(systemName: isShow ? "eye.fill" : "eye.slash.fill")
+                    .foregroundColor(.textTitle)
+            }
+        }
+    }
+}
