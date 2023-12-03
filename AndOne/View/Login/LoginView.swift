@@ -41,9 +41,17 @@ struct LoginView: View {
                 VStack{
                     Text("Email")
                         .font(.customfont(.semibold, fontSize: 16))
-                        .foregroundColor(.primaryText.opacity(0.6))
+                        .foregroundColor(.primaryText)
                         .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
-                    TextField("Enter email", text: $txtEmail)
+                    TextField("Enter email", text: $loginVM.txtEmail)
+                    
+                    Divider()
+                    
+                    Text("Password")
+                        .font(.customfont(.semibold, fontSize: 16))
+                        .foregroundColor(.primaryText)
+                        .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+                    TextField("Enter password", text: $loginVM.txtPassword)
                 }
                 
                 Spacer()
