@@ -53,6 +53,19 @@ struct SignInView: View {
                             .frame(minWidth: 0, maxWidth: .infinity)
                     }
                     
+                    NavigationLink{
+                        LoginView()
+                    } label: {
+                        Text("Continue with email")
+                            .font(.customfont(.bold, fontSize: 18))
+                            .foregroundColor(.white)
+                            .multilineTextAlignment(.center)
+                    }
+                    .frame(minWidth: 0, maxWidth: .infinity, minHeight: 60, maxHeight: 60)
+                    .background(Color.blue)
+                    .cornerRadius(20)
+                    .padding(.bottom, 8)
+                    
                     Divider()
                         .padding(.bottom, 25)
                     

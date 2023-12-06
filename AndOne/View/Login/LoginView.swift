@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct LoginView: View {
     
@@ -59,15 +60,21 @@ struct LoginView: View {
                     
                 }
                 .padding(.bottom, .screenWidth * 0.05)
-                HStack{
-                    Text("Don't have an account?")
-                        
-                        .font(.customfont(.medium, fontSize: 14))
-                        .foregroundColor(.primaryText)
-                    Text("Sign up")
-                        .font(.customfont(.medium, fontSize: 14))
-                        .foregroundColor(.blue)
+                
+                NavigationLink{
+                    SignUpView()
+                } label: {
+                    HStack{
+                        Text("Don't have an account?")
+                            
+                            .font(.customfont(.medium, fontSize: 14))
+                            .foregroundColor(.primaryText)
+                        Text("Sign up")
+                            .font(.customfont(.medium, fontSize: 14))
+                            .foregroundColor(.blue)
+                    }
                 }
+                
             
                 Spacer()
                 
@@ -105,6 +112,9 @@ struct LoginView: View {
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView()
+        NavigationView{
+            LoginView()
+        }
+        
     }
 }
