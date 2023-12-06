@@ -110,6 +110,10 @@ struct LoginView: View {
     }
 }
 
+func login(){
+    
+}
+
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView{
