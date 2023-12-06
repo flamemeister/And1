@@ -57,7 +57,7 @@ struct LoginView: View {
                 .padding(.bottom, .screenWidth * 0.05)
                 
                 RoundButton(title: "Log In"){
-                    
+                    login(email: loginVM.txtEmail, password: loginVM.txtPassword)
                 }
                 .padding(.bottom, .screenWidth * 0.05)
                 
@@ -75,7 +75,6 @@ struct LoginView: View {
                     }
                 }
                 
-            
                 Spacer()
                 
             }
@@ -110,7 +109,13 @@ struct LoginView: View {
     }
 }
 
-func login(){
+func login(email: String, password: String){
+    Auth.auth().createUser(withEmail: email, password: password){ result, error in
+        if error != nil{
+            print(error!.localizedDescription)
+        }
+        
+    }
     
 }
 
